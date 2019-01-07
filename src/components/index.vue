@@ -52,9 +52,9 @@ export default {
 			this.$axios({
 				method:'post',
 				data: self.pageData,
-				url:'http://localhost:3000/blog/blogList/',
+				url:'/blog/blogList/',
 				headers:{
-					"Conten-Type":"http://localhost:3000/blog/blogList/"
+					"Conten-Type":"/blog/blogList/"
 				}
 			})
 			.then(function(res){

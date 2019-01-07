@@ -36,9 +36,9 @@ export default {
 			this.$axios({
 				method:'post',
 				data: {id: self.id},
-				url:'http://localhost:3000/blog/getBlog/',
+				url:'/blog/getBlog/',
 				headers:{
-					"Conten-Type":"http://localhost:3000/blog/getBlog/"
+					"Conten-Type":"/blog/getBlog/"
 				}
 			})
 			.then(function(res){

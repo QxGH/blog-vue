@@ -3,7 +3,7 @@
 		<div class="aside-normal">
 			<div class="aside-header ridius-50">
 				<span class="ridius-50">
-					<img class="ridius-50" src="http://pdqo4705x.bkt.clouddn.com/header.jpg">
+					<img class="ridius-50" src="http://qny.qxtodo.com/header.jpg">
 				</span>
 			</div>
 			<div class="aside-name">
@@ -25,7 +25,7 @@
 				<a href="https://weibo.com/5586987236" target="_blank">
 					<i class="fa fa-weibo" aria-hidden="true"></i>
 				</a>
-				<a href="http://pdqo4705x.bkt.clouddn.com/weixin-qecode.jpg" target="_blank">
+				<a href="http://qny.qxtodo.com/weixin-qecode.jpg" target="_blank">
 					<i class="fa fa-weixin" aria-hidden="true"></i>
 				</a>
 				<a href="https://github.com/QxGH" target="_blank">
