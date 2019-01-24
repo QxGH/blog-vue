@@ -30,7 +30,6 @@ export default {
 			// 传参
 			let routerParam = this.$route.query.data;
 			this.id = routerParam;
-
 			// axiox
 			var self = this;
 			this.$axios({
@@ -51,9 +50,7 @@ export default {
 				});
 			})
 		}
-
 	}
-
 }
 </script>
 

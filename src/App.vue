@@ -1,15 +1,5 @@
 <template>
 	<div id="app">
-		<!--<el-container>
-			<app-header></app-header>
-			<el-main>
-				<router-view/>
-			</el-main>
-			<el-footer>
-				<div class="text-center c-999 fs-16">qxtodo.com</div>
-			</el-footer>
-		</el-container>-->
-		
 		<el-container>
 			<app-nav></app-nav>
 			<el-container id="container_main">
