@@ -5,11 +5,11 @@
 		</div>
 		<h1>{{blogContent.title}}</h1>
 		<div class="blog-content-info">
-			<span>发表于：<i>{{date}}</i></span>
+			<span>发表于：<i>{{date | getTime}}</i></span>
 			<span>分类于：<i>{{blogContent.type}}</i></span>
 			<span>标签：<i>{{blogContent.tag}}</i></span>
 		</div>
-		<div class="blog-content-main" v-html="blogContent.content"></div>	
+		<div class="blog-content-main" v-html="blogContent.content"></div>
 	</div>
 </template>
 
@@ -27,23 +27,23 @@ export default {
 	},
 	methods: {
 		getParams() {
-			// 传参 
+			// 传参
 			let routerParam = this.$route.query.data;
 			this.id = routerParam;
-			
+
 			// axiox
-			var self = this;  
+			var self = this;
 			this.$axios({
 				method:'post',
 				data: {id: self.id},
-				url:'/blog/getBlog/',
+				url:'http://localhost:3000/blog/getBlog/',
 				headers:{
-					"Conten-Type":"/blog/getBlog/"
+					"Conten-Type":"http://localhost:3000/blog/getBlog/"
 				}
 			})
 			.then(function(res){
 				self.blogContent = res.data.data[0];
-				self.date = self.blogContent.date.match(/(\S*)T/)[1];
+				self.date = self.blogContent.date;
 			})
 			.catch(function(err){
 				self.$alert('发生错误！', '提示', {
@@ -51,7 +51,7 @@ export default {
 				});
 			})
 		}
-		
+
 	}
 
 }

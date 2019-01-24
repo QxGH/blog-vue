@@ -6,7 +6,7 @@
 				<ul class="blog-list-info clearfix">
 					<li>
 						<i class="fa fa-calendar-o" aria-hidden="true"></i>
-						<span>{{item.date.match(/(\S*)T/)[1]}}</span>
+						<span>{{item.date | getDate}}</span>
 					</li>
 					<li>
 						<i class="fa fa-folder-o" aria-hidden="true"></i>
@@ -48,13 +48,13 @@ export default {
 	},
 	methods: {
 		get(){
-			var self = this;  
+			var self = this;
 			this.$axios({
 				method:'post',
 				data: self.pageData,
-				url:'/blog/blogList/',
+				url:'http://localhost:3000/blog/blogList/',
 				headers:{
-					"Conten-Type":"/blog/blogList/"
+					"Conten-Type":"http://localhost:3000/blog/blogList/"
 				}
 			})
 			.then(function(res){
